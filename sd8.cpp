@@ -7,6 +7,7 @@
  */
 
 #include <iostream>
+#include <string>
 
 int main() {
 
@@ -16,6 +17,10 @@ int main() {
     char c = 'a';
     char* p;
     p = &c;
+    std::string s = "Hello, ";
+    std::string s2 = "World!";
+    std::string s3, s4;
+/*
     std::cout << "Please enter a number and press enter: ";
     std:: cin >> x;
     std::cout << "You entered: " << x << std::endl;
@@ -28,7 +33,20 @@ int main() {
 
     std::cout << "Pointer section\n";
     std::cout << "The address of the character " << c << " is " << p << "\n";
-    std::cout << "Oops! The address is " << p << std::endl;
+    std::cout << "Oops! The address is " << &c << std::endl;
+
+    std::cout << "string section\n";
+    std::cout << std::endl;
+    s = s + s2;
+    std::cout << s << std::endl;
+*/
+    std::cout << "Enter a string: ";
+    std::getline(std::cin, s3);
+    std::cout << "you entered: " << s3 << std::endl;
+    std::cout << "a substring is ";
+    s4 = s3.substr(0, 4);
+    std::cout << "the substring is " << s4 << std::endl;
+
 
 
 }
